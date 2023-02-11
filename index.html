@@ -1,114 +1,146 @@
 <html>
-    <head>
-        <title>Noren</title>
-        <style>
-            nav{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 20px;
-            }
 
-            div.links a{
-                padding: 5px;
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-            }
+<head>
+    <title>Noren</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
 
-            #section-home{
-                display: flex;
-                justify-content: space-between;
-                background-color: gray;
-                color: white;
-                margin: 20px;
-                border-radius: 15px;
-            }
-            #section-home img{
-                height: 300px;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-            }
+        div.links a {
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
 
-            #section-home div:first-child {
-                padding: 20px;
-            }
-            .two-projects {
-                display: flex;
-            }
-            
-            .two-projects>div{
-                width: 50%;
-                border: 2px solid;
-                
-            }
+        #section-home {
+            display: flex;
+            justify-content: space-between;
+            background-color: #5e4f90;
+            color: white;
+            margin: 20px;
+            border-radius: 15px;
+        }
 
-            .two-projects img {
-                height: 300px;
-                
-            }
-        </style>
-    </head>
+        #section-home img {
+            height: 300px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
 
-    <body>
-        <nav>
+        #section-home div:first-child {
+            padding: 20px;
+        }
+
+        #section-projects {
+            margin: 20px;
+
+
+        }
+
+        .two-projects {
+            display: flex;
+        }
+
+        .two-projects>div {
+            width: 50%;
+            padding: 20px;
+            border-radius: 20px;
+
+
+        }
+
+        .two-projects img {
+            height: 300px;
+        }
+
+        .two-projects>div:first-child {
+            background-color: #a29fcf;
+            margin-right: 10px;
+        }
+
+        .two-projects>div:last-child {
+            background-color: lightskyblue;
+            margin-left: 10px;
+        }
+        .third-projects {
+            padding: 20px;
+            margin: 20px 0;
+            background-image:linear-gradient(to bottom right,violet,black);
+            color: black;
+            border-radius: 20px;
+        }
+        .third-projects img{
+            height: 400px;
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <!--Container for logo-->
+            <a href="/">
+                <img src="Images/logo.png" alt="Error In Loading">
+            </a>
+        </div>
+        <div class="links">
+            <!--Container for navigation links-->
+            <a href="section-home">
+                Home
+            </a>
+            <a href="section-projects">
+                Projects
+            </a>
+            <a href="section-contact">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <section id="section-home">
+
+        <div>
+            <!--discription about me-->
+            <h1>Hello! I'm Noren,a Photographer & Cinematographer With 2 Years Of Experience </h1>
+            <p>Capturing Moments Behind The Lens</p>
+        </div>
+        <div>
+            <!--My Image-->
+            <img src="Images/1459f99e-025d-4707-81d0-926425da9210.jpg" alt="">
+        </div>
+
+    </section>
+    <section id="section-projects">
+        <div class="two-projects">
+            <!--first two projects-->
             <div>
-                <!--Container for logo-->
-                <a href="/">
-                    <img src="Images/logo.png" alt="Error In Loading">
-                </a>
-            </div>
-            <div class="links">
-                <!--Container for navigation links-->
-                <a href="section-home">
-                    Home
-                </a>
-                <a href="section-projects">
-                    Projects
-                </a>
-                <a href="section-contact">
-                    Contact
-                </a>    
-            </div>
-        </nav>
-
-        <section id="section-home">
-
-            <div>
-                <!--discription about me-->
-                <h1>Hello! I'm Noren,a Photographer & Cinematographer With 2 Years Of Experience </h1>
-                <p>Capturing Moments Behind The Lens</p>
+                <h1>Paymento</h1>
+                <p>Personal Finance Mobile</p>
+                <img src="Images/paymento.png" alt="">
             </div>
             <div>
-                <!--My Image-->
-                <img src="Images/1459f99e-025d-4707-81d0-926425da9210.jpg" alt="">
+                <h1>Taskit</h1>
+                <p>Task Management App</p>
+                <img src="Images/taskit.png" alt="">
             </div>
-
-        </section>
-        <section id="section-projects">
-            <div class="two-projects">
-                <!--first two projects-->
-                <div>
-                    <h1>Paymento</h1>
-                    <p>Personal Finance Mobile</p>
-                    <img src="Images/paymento.png" alt="">
-                </div>
-                <div>
-                    <h1>Taskit</h1>
-                    <p>Task Management App</p>
-                    <img src="Images/taskit.png" alt="">
-                </div>
-            </div>
-            <div>
-                <!--third project-->
-                <h1>Piyuu</h1>
-                <p>Freelancing plateform for individuals</p>
-                <img src="Images/piyuu.png" alt="">
-            </div>
-        </section>
-        
+        </div>
+        <div class="third-projects">
+            <!--third project-->
+            <h1>Piyuu</h1>
+            <p>Freelancing plateform for individuals</p>
+            <img src="Images/piyuu.png" alt="">
+        </div>
+    </section>
 
 
-    </body>
-    
+
+</body>
+
 </html>
